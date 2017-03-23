@@ -1,0 +1,137 @@
+body {
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif, Arial;
+}
+
+a {
+  text-decoration: none;
+  color: #1b1818;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+/* header */
+#header {
+  background-color: #efebc2;
+}
+
+#header-top {
+  border-bottom: #1b1818 solid 5px;
+}
+
+#header-top > h1 {
+  display: table-cell;
+}
+
+#header-top > h1 > a {
+  text-decoration: underline;
+}
+
+.menu {
+  list-style: none;
+  display: table-cell;
+}
+
+.menu > li {
+  width: 90px;
+  float: left;
+  text-align: center;
+  /*vertical-align: middle;*/
+}
+
+.menu > li > a:hover {
+  background-color: #1b1818;
+  color: #ffffff;
+}
+
+#banner {
+  background-color: #ffffff;
+}
+
+#banner > img {
+  width: 70%;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  display: block;
+}
+
+#banner > .menu {
+  width: 20%;
+  height: 60px;
+  background-color: #efebc2;
+  border: #1b1818 solid 2px; /* ここの色? */
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* content */
+#content {
+  background-color: #efebc2;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.beige-background {
+  background-color: #efebc2;
+}
+
+.white-background {
+  background-color: #ffffff;
+}
+
+.article {
+  padding: 15px;
+}
+
+.article > table {
+  margin: 0 auto;
+  border: #3a7429 solid 2px;
+  border-collapse: collapse;
+}
+
+.article > table th {
+  background-color: #3a7429;
+  color: #ffffff;
+  width: 100px;
+  text-align: center;
+  /*border: #3a7429 solid 2px;*/
+}
+
+.article > table td {
+  width: 200px;
+  border: #3a7429 solid 2px;
+  padding-left: 15px;
+}
+
+/* footer */
+#footer {
+  background-color: #3d2d13;
+  color: #ffffff;
+}
+
+#footer > p {
+  text-align: center;
+}
+
+#footer > p > a {
+  text-decoration: underline;
+  color: #ffffff;
+}
