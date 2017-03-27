@@ -34,6 +34,10 @@ a {
   text-decoration: underline;
 }
 
+#header-top > h1 > a > img {
+  width: 300px;
+}
+
 .menu {
   list-style: none;
   display: table-cell;
@@ -56,20 +60,8 @@ a {
 }
 
 #banner > img {
-  width: 70%;
-  margin-left: 10px;
-  margin-right: 10px;
-  float: left;
+  width: 100%;
   display: block;
-}
-
-#banner > .menu {
-  width: 20%;
-  height: 60px;
-  background-color: #efebc2;
-  border: #1b1818 solid 2px; /* ここの色? */
-  display: table-cell;
-  vertical-align: middle;
 }
 
 /* content */
