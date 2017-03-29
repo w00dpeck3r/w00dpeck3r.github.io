@@ -1,5 +1,7 @@
 body {
   font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif, Arial;
+  width: 100%;
+  min-width: 900px;
 }
 
 a {
@@ -8,7 +10,6 @@ a {
 }
 
 .container {
-  width: 900px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -67,6 +68,8 @@ a {
 
 #banner > img {
   width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   display: block;
 }
 
