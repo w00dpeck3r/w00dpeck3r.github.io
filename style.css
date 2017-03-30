@@ -132,6 +132,13 @@ a {
   padding-left: 15px;
 }
 
+/* pagetop */
+#pagetop {
+  position: fixed;
+  right: 0;
+  bottom: 30px;
+}
+
 /* footer */
 #footer {
   background-color: #3d2d13;
