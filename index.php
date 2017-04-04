@@ -10,24 +10,36 @@
     ?>
   </div>
 
-  <?php
-  /*
-  $even = false; // 偶奇判定用変数
+  <div class="article white-background">
+    <h2>project</h2>
+    <?php
+    $my_post = get_page_by_title('project');
+    echo apply_filters('the_content', $my_post -> post_content);
+    ?>
+  </div>
 
-  if (have_posts()) : // WordPress ループ
-    while (have_posts()) : the_post(); // 繰り返し処理開始 ?>
+  <div class="article beige-background">
+    <h2>schedule</h2>
+    <?php
+    $my_post = get_page_by_title('schedule');
+    echo apply_filters('the_content', $my_post -> post_content);
+    ?>
+  </div>
 
-      <div class="article <?php echo $even? 'white-background' : 'beige-background'; ?>">
-        <h2><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></h2>
-        <?php the_content(); ?>
-      </div>
+  <div class="article white-background">
+    <h2>news</h2>
+    <?php
+    $my_post = get_page_by_title('news');
+    echo apply_filters('the_content', $my_post -> post_content);
+    ?>
+  </div>
 
-      <?php $even = $even? false : true; ?>
-
-  <?php
-    endwhile;
-  endif;
-  */
-  ?>
+  <div class="article beige-background">
+    <h2>contact</h2>
+    <?php
+    $my_post = get_page_by_title('contact');
+    echo apply_filters('the_content', $my_post -> post_content);
+    ?>
+  </div>
 
 <?php get_footer(); ?>
