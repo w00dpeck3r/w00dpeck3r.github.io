@@ -10,14 +10,14 @@
   <body>
     <div id="header" class="container">
       <div id="header-top">
-        <h1><a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Logo image"></a></h1>
+        <h1><a href="<?php echo site_url(); ?>/#top"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Logo image"></a></h1>
         <ul class="menu">
-          <li><a href="#">TOP</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PROJECT</a></li>
-          <li><a href="#">SCHEDULE</a></li>
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="<?php echo site_url(); ?>/#top">TOP</a></li>
+          <li><a href="<?php echo site_url(); ?>/#about">ABOUT</a></li>
+          <li><a href="<?php echo site_url(); ?>/#project">PROJECT</a></li>
+          <li><a href="<?php echo site_url(); ?>/#schedule">SCHEDULE</a></li>
+          <li><a href="<?php echo site_url(); ?>/#news">NEWS</a></li>
+          <li><a href="<?php echo site_url(); ?>/#contact">CONTACT</a></li>
         </ul>
         <div class="clear"></div> <!-- cancel float -->
       </div>

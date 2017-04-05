@@ -2,7 +2,7 @@
 
 <div id="content" class="container">
 
-  <div class="article beige-background">
+  <div class="article beige-background" id="about">
     <h2>about</h2>
     <?php // 指定の固定ページの本文を抽出
     $my_post = get_page_by_title('about');
@@ -10,7 +10,7 @@
     ?>
   </div>
 
-  <div class="article white-background">
+  <div class="article white-background" id="project">
     <h2>project</h2>
     <?php
     $my_post = get_page_by_title('project');
@@ -18,7 +18,7 @@
     ?>
   </div>
 
-  <div class="article beige-background">
+  <div class="article beige-background" id="schedule">
     <h2>schedule</h2>
     <?php
     $my_post = get_page_by_title('schedule');
@@ -26,7 +26,7 @@
     ?>
   </div>
 
-  <div class="article white-background">
+  <div class="article white-background" id="news">
     <h2>news</h2>
     <?php
     $my_post = get_page_by_title('news');
@@ -34,7 +34,7 @@
     ?>
   </div>
 
-  <div class="article beige-background">
+  <div class="article beige-background" id="contact">
     <h2>contact</h2>
     <?php
     $my_post = get_page_by_title('contact');
