@@ -108,15 +108,18 @@ a {
 
 .article {
   padding: 15px;
+  position: relative;
 }
 
-.article > div {
+.article > .project-icon-container {
+  text-align: center;
+}
+
+.article > .project-icon-container > .project-icon {
   display: inline-block;
-  /*display: block;*/
-  margin: 0 auto;
 }
 
-.article > div > p {
+.article > .project-icon-container > .project-icon > p {
   text-align: center;
 }
 
