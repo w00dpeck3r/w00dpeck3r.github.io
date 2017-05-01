@@ -1,22 +1,37 @@
+<?php
+/*
+Template Name: Project
+*/
+?>
+
 <?php get_header(); ?>
 
 <div id="content" class="container">
   <div id="links">
-    <h2><a href="<?php echo site_url(); ?>/#top">ホーム</a> > <a href="#">PROJECT - ゲームアプリ</a></h2>
+    <h2><a href="<?php echo site_url(); ?>/#top">ホーム</a> > <a href="#">PROJECT - <?php echo get_the_title(); ?></a></h2>
   </div>
-  <div class="article beige-background">
-    <h3>活動内容</h3>
-  </div>
-  <div class="article white-background">
-    <h3>活動日</h3>
-  </div>
-  <div class="article beige-background">
-    <h3>ギャラリー</h3>
-  </div>
-</div> <!-- content ends here -->
+  <?php
+  $args = array('post_type' => get_the_title());
+  $customPosts = get_posts($args);
+  if ($customPosts) {
+    $odd = true;
+    foreach ($customPosts as $post) {
+      if ($odd) : ?>
+        <div class="article beige-background">
+      <?php else : ?>
+        <div class="article white-background">
+      <?php endif; ?>
 
-<div id="pagetop">
-  <a href="#top"><img src="./images/pagetop.png" alt="jump to top of this page"></a>
-</div>
+      <h3><?php echo $post -> post_title; ?></h3>
+      <?php echo $post -> post_content; ?>
+
+      </div>
+
+      <?php
+      $odd = !$odd;
+    }
+  }
+  ?>
+</div> <!-- content ends here -->
 
 <?php get_footer(); ?>
