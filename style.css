@@ -177,3 +177,7 @@ a {
   text-decoration: underline;
   color: #ffffff;
 }
+
+.center {
+  text-align: center;
+}

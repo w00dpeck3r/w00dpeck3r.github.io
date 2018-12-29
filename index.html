@@ -10,12 +10,12 @@
       <div id="header-top">
         <h1><a href="#"><img src="./images/logo.png" alt="WoodPecker Logo"></a></h1>
         <ul class="menu">
-          <li><a href="#">TOP</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PROJECT</a></li>
-          <li><a href="#">SCHEDULE</a></li>
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#top">TOP</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#project">PROJECT</a></li>
+          <li><a href="#schedule">SCHEDULE</a></li>
+          <li><a href="#news">NEWS</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
         </ul>
         <div class="clear"></div> <!-- cancel float -->
       </div>
@@ -25,15 +25,15 @@
     </div> <!-- header ends here -->
 
     <div id="content" class="container">
-      <div class="article beige-background">
+      <div class="article beige-background" id="about">
         <h2>about</h2>
         <h3>- WoodPeckerーとは -</h3>
-        <p>hoge</p>
+        <p class="center">IT&ビジネスサークル「WoodPecker」 ~An Information Technology and Buisiness Study Club~</p>
       </div>
-      <div class="article white-background">
+
+      <div class="article white-background" id="project">
         <h2>project</h2>
         <h3>- 活動の紹介 -</h3>
-        <p>fuga</p>
         <div class="project-icon-container">
           <div class="project-icon">
             <a href="#">
@@ -45,23 +45,24 @@
             <a href="#">
               <img src="./images/btn_02.png" alt="btn_02" onmouseover="this.src='./images/btn_02_2.png'" onmouseout="this.src='./images/btn_02.png'">
             </a>
-            <p>aaa</p>
+            <p>開発</p>
           </div>
           <div class="project-icon">
             <a href="#">
               <img src="./images/btn_03.png" alt="btn_03" onmouseover="this.src='./images/btn_03_2.png'" onmouseout="this.src='./images/btn_03.png'">
             </a>
-            <p>aaa</p>
+            <p>ビジネス</p>
           </div>
           <div class="project-icon">
             <a href="#">
               <img src="./images/btn_04.png" alt="btn_04" onmouseover="this.src='./images/btn_04_2.png'" onmouseout="this.src='./images/btn_04.png'">
             </a>
-            <p>aaa</p>
+            <p>勉強会</p>
           </div>
         </div>
       </div>
-      <div class="article beige-background">
+
+      <div class="article beige-background" id="schedule">
         <h2>schedule</h2>
         <h3>- 一年間の活動内容 -</h3>
         <table>
@@ -110,8 +111,8 @@
     </div>
 
     <div id="footer" class="container">
-      <p><a href="#">お問い合わせ</a> | <a href="#">サイトマップ</a></p>
-      <p>Copyright (c) 2017 Copyright WoodPecker All Rights Reserved.</p>
+      <p><a href="./contact.html">お問い合わせ</a> | <a href="#">サイトマップ</a></p>
+      <p>Copyright (c) 2017-2018 Copyright WoodPecker All Rights Reserved.</p>
     </div> <!-- footer ends here -->
   </body>
 </html>
